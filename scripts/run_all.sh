@@ -9,7 +9,7 @@ pkill -9 -f spring-petclinic || echo "Failed to kill any apps"
 
 docker-compose kill || echo "No docker containers are running"
 
-echo "Running infra"
+echo "Running infra by PM"
 docker-compose up -d grafana-server prometheus-server tracing-server
 
 echo "Running apps"
